@@ -10,6 +10,7 @@ class Paper{
         this.y = y;
         this.r = r;
         this.body=Bodies.circle(this.x,this.y,(this.r-20)/2,options);
+        Matter.Body.scale(this.body, 10,10);
         this.image = loadImage("paper.png");        
         World.add(world,this.body);
         
